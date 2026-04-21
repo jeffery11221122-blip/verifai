@@ -1,0 +1,46 @@
+/* verifai design tokens */
+:root {
+  /* Surfaces — warm, newspaper-adjacent */
+  --bg: #F5F1E8;
+  --paper: #FDFBF5;
+  --paper-2: #F9F5EA;
+  --ink: #1A1A17;
+  --ink-2: #3A3A34;
+  --muted: #6B6B63;
+  --muted-2: #9B9B92;
+  --rule: #E4DECF;
+  --rule-2: #D4CDB8;
+
+  /* Brand */
+  --green: #1D9E75;
+  --green-ink: #0F6B4E;
+  --green-wash: #E6F2EC;
+
+  /* Risk (earth, not alarm) */
+  --ochre: #C8893D;
+  --ochre-ink: #8A5A1E;
+  --ochre-wash: #F5E9D3;
+
+  --brick: #B04A38;
+  --brick-ink: #7A2E1F;
+  --brick-wash: #F0D9D2;
+
+  /* Type */
+  --serif: 'DM Serif Display', 'DM Serif Text', Georgia, serif;
+  --sans: 'DM Sans', -apple-system, system-ui, sans-serif;
+  --mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+button { font-family: inherit; cursor: pointer; }
+a { color: inherit; }
+
+::selection { background: var(--green); color: white; }

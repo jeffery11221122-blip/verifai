@@ -185,26 +185,6 @@ function Landing() {
         </div>
       </section>
 
-      {/* Marker explanation */}
-      <section className="markers" id="trust">
-        <div className="sec-head">
-          <div className="eyebrow">Three colors · action-oriented</div>
-          <h2 className="sec-h2">Each color tells you <em>what to do next</em>.</h2>
-          <p className="sec-sub">Not a fuzzy "risk level" — a specific action.</p>
-        </div>
-        <div className="marker-grid">
-          <MarkerCard status="green"  title="Cite"    desc="This sentence has a clear match in your source. Paste it straight into the report."
-            example="The MVP ships three features: source attribution, three-color risk markers, and a 0–100 trust score."
-            ev="Source: 'Product scope (MVP, three items): inline source attribution, three-color risk markers… trust score 0–100.'"/>
-          <MarkerCard status="ochre"  title="Review"  desc="Keywords match, but the AI added numbers or dates the source never mentioned. Read it before you use it."
-            example="The target users are independent consultants shipping 2–3 reports per month, each spending 6 hours proofing AI output."
-            ev="'2–3 per month' is sourced; '6 hours proofing' is not in the document. Remove or add a citation."/>
-          <MarkerCard status="red"    title="Drop"    desc="No matching passage anywhere in the source. Likely hallucination — don't cite it."
-            example="verifai uses a rigorous two-layer verification algorithm and internal tests show 94.7% accuracy."
-            ev="Source contains no mention of any algorithm design, testing protocol, or accuracy figure."/>
-        </div>
-      </section>
-
       {/* WHO */}
       <section className="who" id="who">
         <div className="who-grid">
@@ -222,6 +202,26 @@ function Landing() {
             <li><span className="who-chk">✓</span>Afraid of errors slipping into final reports</li>
             <li className="who-next"><span className="who-chk">→</span>Next up: law firms</li>
           </ul>
+        </div>
+      </section>
+
+      {/* Marker explanation */}
+      <section className="markers" id="trust">
+        <div className="sec-head">
+          <div className="eyebrow">Three colors · action-oriented</div>
+          <h2 className="sec-h2">Each color tells you <em>what to do next</em>.</h2>
+          <p className="sec-sub">Not a fuzzy "risk level" — a specific action.</p>
+        </div>
+        <div className="marker-grid">
+          <MarkerCard status="green"  title="Cite"    desc="This sentence has a clear match in your source. Paste it straight into the report."
+            example="The MVP ships three features: source attribution, three-color risk markers, and a 0–100 trust score."
+            ev="Source: 'Product scope (MVP, three items): inline source attribution, three-color risk markers… trust score 0–100.'"/>
+          <MarkerCard status="ochre"  title="Review"  desc="Keywords match, but the AI added numbers or dates the source never mentioned. Read it before you use it."
+            example="The target users are independent consultants shipping 2–3 reports per month, each spending 6 hours proofing AI output."
+            ev="'2–3 per month' is sourced; '6 hours proofing' is not in the document. Remove or add a citation."/>
+          <MarkerCard status="red"    title="Drop"    desc="No matching passage anywhere in the source. Likely hallucination — don't cite it."
+            example="verifai uses a rigorous two-layer verification algorithm and internal tests show 94.7% accuracy."
+            ev="Source contains no mention of any algorithm design, testing protocol, or accuracy figure."/>
         </div>
       </section>
 

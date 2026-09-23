@@ -1,3 +1,5 @@
+![VerifAI Preview](./images/verifai-preview.png)
+
 # VerifAI
 
 AI-assisted React prototype for identifying and reviewing potentially unreliable AI-generated content.

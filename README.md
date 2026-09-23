@@ -1,6 +1,6 @@
 # Markdown
 
-![VerifAI Preview](./images/verifai-preview.png)
+![VerifAI Preview](./verifai-preview.png)
 
 # VerifAI
 
